@@ -1,4 +1,4 @@
-##Open Bank Application :
+## Open Bank Application :
 
 It was developed on Java and Spring MVC with Apache Camel Spring DSL. 
  
@@ -31,7 +31,7 @@ git clone https://github.com/felipebizz/open-bank.git
     
     cd open-bank
    
-Step 2:run on embedded jetty 
+Step 2: run on embedded jetty 
  
  	mvn clean install jetty:run
 
@@ -52,7 +52,7 @@ Step 4: use username:admin and password:admin
 ```
 
 ```
-/open-bank/rest/transactions-amount-total/{typeTransaction}
+/open-bank/rest/transaction-total-amount/{typeTransaction}
 ```
 
 
