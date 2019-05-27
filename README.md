@@ -56,7 +56,6 @@ Step 4: use username:admin and password:admin
 ```
 
 
-
 ### Environment Test:
 
 - Ubuntu/ Linux
