@@ -1,13 +1,16 @@
 ## Open Bank Application :
 
 It was developed on Java and Spring MVC with Apache Camel Spring DSL. 
- 
+
+[![Build Status](https://travis-ci.org/felipebizz/open-bank.svg?branch=master)](https://travis-ci.org/felipebizz/open-bank)
+
 ### Features:
 
 -	Used jetty embedded web servlet container to startup the web application in maven   
 -	Apache camel to route web service call
 -	Configured Logback for logging
 -	Tested code on QAPlugin.
+-	Continuos integration(Travis)
 
 
 #### Used Technologies
