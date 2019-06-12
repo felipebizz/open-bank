@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-  Class responsible to execute  some business Rules
+ * Class responsible to execute  some business Rules
  */
 public class ApplicationHelper {
 
@@ -85,9 +85,8 @@ public class ApplicationHelper {
         ArrayList<BackBaseField> backBaseFieldsList = new ArrayList<>();
         BackBaseField backBaseField = new BackBaseField();
 
-        for (Transaction transaction : transactions) {
-            backBaseFieldsList.add(backBaseField.mapTransactionToBackBaseField(transaction));
-        }
+        transactions.forEach(transaction ->
+                backBaseFieldsList.add(backBaseField.mapTransactionToBackBaseField(transaction)));
 
         exchange.getOut().setBody(backBaseFieldsList);
     }
