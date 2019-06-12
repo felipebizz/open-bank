@@ -5,8 +5,13 @@ import com.openbank.route.FilteredTransactionsRouteProxy;
 import com.openbank.route.FilteredTransactionsTotalAmtRouteProxy;
 import com.openbank.util.CommonConstant;
 import org.apache.camel.Produce;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TransactionController {
@@ -26,10 +31,9 @@ public class TransactionController {
     @RequestMapping(value = CommonConstant.ALL_TRANSACTIONS, method = RequestMethod.GET,
             produces = "application/json; charset=UTF-8")
     public @ResponseBody
-    String getAllTransactions() {
-        return allTransactionRoute.getAllTransactions();
+    ResponseEntity<?> getAllTransactions() {
+        return new ResponseEntity<>(allTransactionRoute.getAllTransactions(), HttpStatus.OK);
     }
-
 
     @RequestMapping(value = CommonConstant.TRANSACTIONS_BY_TYPE, method = RequestMethod.GET,
             produces = "application/json; charset=UTF-8")
