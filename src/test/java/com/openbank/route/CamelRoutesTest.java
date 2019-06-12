@@ -39,6 +39,7 @@ public class CamelRoutesTest extends CamelSpringTestSupport {
     public void checkRoutesDefinitions() {
         List<RouteDefinition> routeDefinitions = context.getRouteDefinitions();
         HashMap<String, String> inputRoutes = new HashMap<>();
+
         for (RouteDefinition routeDefinition : routeDefinitions) {
             for (FromDefinition input : routeDefinition.getInputs()) {
                 inputRoutes.put(input.getUri(), "");
