@@ -13,6 +13,7 @@ http://www.springframework.org/schema/security/spring-security-3.2.xsd">
         <intercept-url pattern="/v1/**" access="ROLE_USER"/>
     </http>
 
+
     <authentication-manager alias="authenticationManager">
         <authentication-provider>
             <user-service>
