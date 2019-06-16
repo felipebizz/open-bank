@@ -28,7 +28,7 @@
         <spring.test.version>3.2.2.RELEASE</spring.test.version>
         <maven.compiler.version>2.3.2</maven.compiler.version>
         <jetty.version>7.5.3.v20111011</jetty.version>
-        <tomcat.webapp.dir></tomcat.webapp.dir>
+        <tomcat.webapp.dir/>
         <swagger.version>2.9.2</swagger.version>
     </properties>
 
