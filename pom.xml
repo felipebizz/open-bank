@@ -29,6 +29,7 @@
         <maven.compiler.version>2.3.2</maven.compiler.version>
         <jetty.version>7.5.3.v20111011</jetty.version>
         <tomcat.webapp.dir></tomcat.webapp.dir>
+        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <dependencies>
@@ -221,17 +222,16 @@
             <version>4.2.0.Final</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+        <!-- SWAGGER -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.7.0</version>
+            <version>${swagger.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.7.0</version>
+            <version>${swagger.version}</version>
         </dependency>
 
         <dependency>
