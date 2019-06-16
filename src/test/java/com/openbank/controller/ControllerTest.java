@@ -76,8 +76,7 @@ public class ControllerTest {
     }
 
     /**
-     * @return Account
-     * @throws IOException IOException
+     * @return Account account
      */
     private Account stubAccount() {
 
