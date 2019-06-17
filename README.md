@@ -69,9 +69,9 @@ Step 4: use username:admin and password:admin
 
 	
 ### Code to Improve
-- create a personalized treating exception
-- Documentation of classes/code/packaging using swagger
-- validation parameters endpoints and returns
-- create new tests scenarios
-- improve log visualization
-- improve security authentication
+- create a personalized error handling.
+- Documentation of classes/code/packaging using swagger.
+- validation parameters endpoints and returns.
+- create new tests scenarios.
+- improve log visualization.
+- improve security authentication.
